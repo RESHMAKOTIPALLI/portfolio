@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Reshma | UI/UX Developer</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gradient Background for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a0dad, #ff6a00); /* Purple to orange gradient */
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent header background */
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Area */
+        main {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            color: #333;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Flexbox Layout for About Section */
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* About Text Section */
+        .about-text {
+            flex: 1 1 60%; /* 60% width */
+            max-width: 60%; /* Limit width */
+        }
+
+        /* Profile Image Section */
+        .about-image {
+            flex: 1 1 30%; /* 30% width */
+            max-width: 30%;
+            border-radius: 50%; /* Circular image */
+            object-fit: cover; /* Ensures image fits in the circular container */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            height: 150px; /* Adjust image size */
+            width: 150px; /* Adjust image size */
+            margin-top: 20px;
+        }
+
+        /* About Text Section */
+        .about-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .about-text {
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .about-image {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Reshma</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <div class="about-content">
+            <!-- About Text Section -->
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Hi, I'm Reshma, a passionate UI/UX developer with a strong focus on creating user-centered designs. I have always been fascinated by the intersection of design and technology, and I am committed to delivering the best possible user experiences.</p>
+            </div>
+
+            <!-- Profile Image Section -->
+            <img src="https://via.placeholder.com/150" alt="Reshma" class="about-image"> <!-- Replace with your image URL -->
+        </div>
+    </main>
+
+</body>
+</html>

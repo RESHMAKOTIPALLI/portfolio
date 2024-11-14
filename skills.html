@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Reshma | UI/UX Developer</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .skill-card {
+            padding: 20px;
+            border-radius: 8px;
+            width: calc(33% - 20px);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Subtle shadow */
+            border: 1px solid #ddd; /* Subtle border */
+            color: white; /* Text color */
+            background: linear-gradient(135deg, #4caf50, #81c784); /* Gradient from green to light green */
+        }
+
+        .skill-card h3 {
+            margin-top: 10px;
+            font-size: 1.3rem;
+        }
+
+        .skill-card p {
+            font-size: 1rem;
+            color: #f4f4f4;  /* Light text color */
+            line-height: 1.5;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        }
+
+        .skill-card i {
+            font-size: 2.5rem;
+            color: white; /* Icon color matches the text */
+        }
+
+        .tool-icon {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .skill-card {
+                width: calc(50% - 20px); /* Two columns on medium screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill-card {
+                width: 100%; /* One column on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Reshma</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="skills">
+            <div class="content">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <!-- UI/UX Design -->
+                    <div class="skill-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating user-centered designs with tools like Figma, Sketch, and Adobe XD.</p>
+                    </div>
+                    <!-- HTML & CSS -->
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>HTML & CSS</h3>
+                        <p>Writing semantic HTML and styling with modern CSS techniques, including Flexbox and Grid.</p>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Building interactive web experiences with JavaScript and frameworks like React.</p>
+                    </div>
+                    <!-- Wireframing & Prototyping -->
+                    <div class="skill-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Wireframing & Prototyping</h3>
+                        <p>Creating wireframes and prototypes to plan user flows and interface designs.</p>
+                    </div>
+                    <!-- Responsive Design -->
+                    <div class="skill-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring that websites are mobile-friendly and look great on all screen sizes.</p>
+                    </div>
+                    <!-- Web Animation -->
+                    <div class="skill-card">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Web Animation</h3>
+                        <p>Adding interactive animations to enhance the user experience using CSS and JavaScript.</p>
+                    </div>
+                    <!-- React -->
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                        <p>Building dynamic web applications with React and creating reusable components.</p>
+                    </div>
+                    <!-- Figma -->
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Figma-logo.svg" alt="Figma Logo" class="tool-icon">
+                        <h3>Figma</h3>
+                        <p>Designing interactive prototypes and UI mockups with Figma.</p>
+                    </div>
+                    <!-- Adobe Photoshop -->
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Adobe_Photoshop_2023_logo.svg" alt="Adobe Photoshop Logo" class="tool-icon">
+                        <h3>Adobe Photoshop</h3>
+                        <p>Editing images and creating graphics using Adobe Photoshop for various projects.</p>
+                    </div>
+                    <!-- Canva -->
+                    <div class="skill-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Canva_Logo.png" alt="Canva Logo" class="tool-icon">
+                        <h3>Canva</h3>
+                        <p>Designing social media graphics, posters, and presentations using Canva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+</body>
+</html>

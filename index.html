@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Reshma | UI/UX Developer</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gradient Background for the Home Page */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a0dad, #ff6a00); /* Purple to orange gradient */
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent header background */
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content area */
+        main {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            color: #333;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Text Section */
+        .intro-text {
+            max-width: 50%;
+        }
+
+        .intro-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .intro-text p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #6a0dad;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff6a00;
+        }
+
+        /* Image Section */
+        .intro-image {
+            max-width: 40%;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+            }
+
+            .intro-text {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .intro-image {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Reshma</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Text Content Section -->
+        <div class="intro-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello, I'm Reshma, a passionate UI/UX developer focused on creating user-centered designs and smooth, interactive experiences. I'm always learning new tools and techniques to build amazing websites and apps.</p>
+
+            <a href="about.html" class="cta-button"> About Me</a>
+        </div>
+
+        <!-- Image Section -->
+        <img src="https://via.placeholder.com/400x400" alt="Reshma" class="intro-image"> <!-- Replace with your image URL -->
+    </main>
+
+</body>
+</html>

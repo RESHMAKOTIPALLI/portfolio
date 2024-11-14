@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Reshma | UI/UX Developer</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gradient Background for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FF6A00, #FFD200); /* Gradient from orange to yellow */
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent header background */
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white; /* White background to make content stand out */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .project-card {
+            background-color: #6a0dad; /* Best purple shade */
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #ddd;
+        }
+
+        .project-card h3 {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            color: white; /* White title text */
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: white; /* White text */
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .project-card a:hover {
+            background-color: #45a049;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .projects-container {
+                grid-template-columns: repeat(1, 1fr); /* 1 card per row on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Reshma</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Development Works Section -->
+        <section id="development-works">
+            <h2>Development Works</h2>
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                    <h3>Project 1 Title</h3>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                    <h3>Project 2 Title</h3>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                    <h3>Project 3 Title</h3>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 4">
+                    <h3>Project 4 Title</h3>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Designing Works Section -->
+        <section id="designing-works">
+            <h2>Designing Works</h2>
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Design Project 1">
+                    <h3>Design Project 1 Title</h3>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Design Project 2">
+                    <h3>Design Project 2 Title</h3>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Design Project 3">
+                    <h3>Design Project 3 Title</h3>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Design Project 4">
+                    <h3>Design Project 4 Title</h3>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
